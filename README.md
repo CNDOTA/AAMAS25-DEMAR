@@ -19,7 +19,7 @@ url={https://openreview.net/forum?id=6bAkCauS3N}
 ## Requirements
 - PyMARL: Please check the [PyMARL](https://github.com/oxwhirl/pymarl) repo for more details about the environment.
 - Multi-agent Particle Environments: in envs/multiagent-particle-envs and install it by `pip install -e .`
-- SMAC: Please check the [SMAC](https://github.com/oxwhirl/smac) repo for more details about the environment. Note that for all SMAC experiments we used the latest version SC2.4.10. The results reported in the SMAC paper (https://arxiv.org/abs/1902.04043) use SC2.4.6.2.69232. Performance is not always comparable across versions.
+- SMAC: Please check the [SMAC](https://github.com/oxwhirl/smac) repo for more details about the environment. Note that for all SMAC experiments we used SC2.4.6.2.69232. Performance is not always comparable across versions.
 
 ## Usage
 Please follow the instructions below to replicate the results in the paper. Hyperparameters can be configured in config files.
