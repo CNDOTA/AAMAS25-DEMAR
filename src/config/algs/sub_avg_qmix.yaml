@@ -1,0 +1,35 @@
+# --- QMIX specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+runner: "episode"
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "sub_avg_learner"
+double_q: False
+mixer: "qmix"
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+
+SubAVG_Agent_flag: 0
+SubAVG_Agent_K: 5
+SubAVG_Agent_flag_select: -1
+SubAVG_Agent_name_select_replacement: 'zero'
+
+SubAVG_Mixer_flag: 1
+SubAVG_Mixer_K: 5
+SubAVG_Mixer_flag_select: -1
+SubAVG_Mixer_name_select_replacement: 'zero'
+
+name: "sub_avg_qmix"
