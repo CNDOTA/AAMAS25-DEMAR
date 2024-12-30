@@ -32,13 +32,13 @@ where hyperparameters are configured based on the below table (Appendix E of our
 ```
 python src/main.py --config=demix --env-config=mpe_env with scenario_name=simple_tag seed=1 > out_demar_pp_1.log 2>&1 &
 ```
-| DEMAR            | simple tag | simple world | simple adversary |
-|------------------|------------|--------------|------------------|
-| $H$              | 3          | 10           | 10               |
-| $N_{\mathbb{H}}$ | 3          | 6            | 4                |
-| $K$              | 1          | 1            | 10               |
-| $N_{\mathbb{K}}$ | 1          | 1            | 4                |
-| $\alpha_{reg}$   | 0.002      | 0.02         | 0.05             |
+| DEMAR                        | simple tag | simple world | simple adversary |
+|------------------------------|------------|--------------|------------------|
+| $H$ (mixer_N)                | 3          | 10           | 10               |
+| $N_{\mathbb{H}}$ (mixer_M)   | 3          | 6            | 4                |
+| $K$ (agent_N)                | 1          | 1            | 10               |
+| $N_{\mathbb{K}}$ (agent_M)   | 1          | 1            | 4                |
+| $\alpha_{reg}$ (hyper_alpha) | 0.002      | 0.02         | 0.05             |
 
 ### StarCraft Multi-Agent Challenge
 Please use the corresponding hyperparameters provided in our paper to run each task.
@@ -48,10 +48,10 @@ where hyperparameters are configured based on the below table (Appendix E of our
 ```
 python src/main.py --config=demix --env-config=sc2 with env_args.map_name=5m_vs_6m env_args.seed=1 > out_demar_5m_vs_6m_1.log 2>&1 &
 ```
-| DEMAR            | 5m\_vs\_6m | 2s3z  | 3s5z  | 10m\_vs\_11m |
-|------------------|------------|-------|-------|--------------|
-| $H$              | 3          | 3     | 10    | 4            |
-| $N_{\mathbb{H}}$ | 2          | 2     | 9     | 3            |
-| $K$              | 1          | 1     | 1     | 1            |
-| $N_{\mathbb{K}}$ | 1          | 1     | 1     | 1            |
-| $\alpha_{reg}$   | 0.002      | 0.002 | 0.001 | 0.01         |
+| DEMAR                         | 5m\_vs\_6m | 2s3z  | 3s5z  | 10m\_vs\_11m |
+|-------------------------------|------------|-------|-------|--------------|
+| $H$ (mixer_N)                 | 3          | 3     | 10    | 4            |
+| $N_{\mathbb{H}}$  (mixer_M)   | 2          | 2     | 9     | 3            |
+| $K$ (agent_N)                 | 1          | 1     | 1     | 1            |
+| $N_{\mathbb{K}}$ (agent_M)    | 1          | 1     | 1     | 1            |
+| $\alpha_{reg}$  (hyper_alpha) | 0.002      | 0.002 | 0.001 | 0.01         |
