@@ -4,14 +4,13 @@ This repository is the implementation of [Dual Ensembled Multiagent Q-Learning w
 
 ## Citing
 If you used this code in your research or found it helpful, please consider citing our paper:
-Bibtex:
 ```
 @inproceedings{
 yang2024dual,
 title={Dual Ensembled Multiagent Q-Learning with Hypernet Regularizer},
 author={Yaodong Yang, Guangyong Chen, Hongyao Tang, Furui Liu, Danruo Deng, and Pheng-Ann Heng},
 booktitle={The 24th International Conference on Autonomous Agents and Multi-Agent Systems},
-year={2024},
+year={2025},
 url={https://openreview.net/forum?id=6bAkCauS3N}
 }
 ```
